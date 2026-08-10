@@ -29,7 +29,7 @@ const Gallery = () => {
               className='mb-4'
             />
           </a>
-          <a href='/images/gallery/2.jpg'>
+          {/* <a href='/images/gallery/2.jpg'>
             <Image
               src='/images/gallery/2.jpg'
               alt='img1'
@@ -37,7 +37,7 @@ const Gallery = () => {
               height={338}
               className='mb-4'
             />
-          </a>
+          </a> */}
           <a href='/images/gallery/3.jpg'>
             <Image
               src='/images/gallery/3.jpg'
@@ -65,7 +65,7 @@ const Gallery = () => {
               className='mb-4'
             />
           </a>
-          <a href='/images/gallery/6.jpg'>
+          {/* <a href='/images/gallery/6.jpg'>
             <Image
               src='/images/gallery/6.jpg'
               alt='img1'
@@ -73,7 +73,7 @@ const Gallery = () => {
               height={4080}
               className='mb-4'
             />
-          </a>
+          </a> */}
           <a href='/images/gallery/7.jpg'>
             <Image
               src='/images/gallery/7.jpg'
@@ -116,6 +116,7 @@ const Gallery = () => {
               alt='img1'
               width={1200}
               height={1600}
+              className='mb-4'
             />
           </a>
           <a href='/images/gallery/12.jpg'>
@@ -127,7 +128,7 @@ const Gallery = () => {
               className='mb-4'
             />
           </a>
-          <a href='/images/gallery/13.jpg'>
+          {/* <a href='/images/gallery/13.jpg'>
             <Image
               src='/images/gallery/13.jpg'
               alt='img1'
@@ -135,7 +136,7 @@ const Gallery = () => {
               height={345}
               className='mb-4'
             />
-          </a>
+          </a> */}
         </LightGallery>
       </div>
     </section>
