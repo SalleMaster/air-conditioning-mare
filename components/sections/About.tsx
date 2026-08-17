@@ -20,7 +20,10 @@ const About = () => {
             izborem u regiji. Naš tim je posvećen tome da osigura da vaš sistem
             klimatizacije radi optimalno u svakoj godini.{' '}
           </p>
-          <a href='#' className={`${buttonVariants({ size: 'lg' })} lg:w-fit`}>
+          <a
+            href='#contact'
+            className={`${buttonVariants({ size: 'lg' })} lg:w-fit`}
+          >
             Kontaktirajte nas
           </a>
         </div>

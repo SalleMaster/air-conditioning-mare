@@ -12,7 +12,7 @@ import Image from 'next/image'
 
 const Gallery = () => {
   return (
-    <section id='actions' className='grid gap-8 bg-background py-20 px-4'>
+    <section id='gallery' className='grid gap-8 bg-background py-20 px-4'>
       <h2 className='text-4xl text-center font-bold'>Galerija naših radova</h2>
       <div className='container mx-auto'>
         <LightGallery
