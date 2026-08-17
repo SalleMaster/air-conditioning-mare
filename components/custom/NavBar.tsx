@@ -30,19 +30,19 @@ const NavBar = () => {
         <NavigationMenuItem>
           <NavigationMenuLink
             className={navigationMenuTriggerStyle()}
-            render={<Link href='/docs'>Galerija</Link>}
+            render={<Link href='/#gallery'>Galerija</Link>}
           />
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink
             className={navigationMenuTriggerStyle()}
-            render={<Link href='/docs'>O nama</Link>}
+            render={<Link href='/#about'>O nama</Link>}
           />
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink
             className={navigationMenuTriggerStyle()}
-            render={<Link href='/docs'>Kontakt</Link>}
+            render={<Link href='/#contact'>Kontakt</Link>}
           />
         </NavigationMenuItem>
       </NavigationMenuList>

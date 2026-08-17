@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section
       id='hero'
-      className='grid relative bg-cover bg-center bg-no-repeat h-screen'
+      className='grid relative bg-cover bg-center bg-no-repeat h-screen px-4'
       style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
     >
       <div className='absolute inset-0 bg-background opacity-50 '></div>
@@ -18,12 +18,12 @@ const Hero = () => {
         </p>
         <div className='flex gap-4'>
           <a
-            href='#'
+            href='#contact'
             className={buttonVariants({ variant: 'outline', size: 'lg' })}
           >
             Kontaktirajte nas
           </a>
-          <a href='#' className={buttonVariants({ size: 'lg' })}>
+          <a href='#services' className={buttonVariants({ size: 'lg' })}>
             Usluge
           </a>
         </div>
