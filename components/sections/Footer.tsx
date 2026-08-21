@@ -1,6 +1,6 @@
-import { Mail, Smartphone } from 'lucide-react'
+import { House, Mail, Smartphone } from 'lucide-react'
 import { buttonVariants } from '../ui/button'
-import FacebookIcon from '../icons/FacebookIcon'
+import { MAIL, PHONE } from '@/app/consts'
 
 const Footer = () => {
   return (
@@ -14,31 +14,33 @@ const Footer = () => {
           <div className='grid gap-1'>
             <h3 className='pl-2 font-semibold'>Email</h3>
             <a
-              href='mailto:info@example.com'
+              href={`mailto:${MAIL}`}
               className={`${buttonVariants({ size: 'lg', variant: 'ghost' })}  w-fit`}
             >
               <Mail />
-              info@example.com
+              {MAIL}
             </a>
           </div>
           <div className='grid gap-1'>
             <h3 className='pl-2 font-semibold'>Telefon</h3>
             <a
-              href='tel:+381601234567'
+              href={`tel:${PHONE}`}
               className={`${buttonVariants({ size: 'lg', variant: 'ghost' })}  w-fit`}
             >
               <Smartphone />
-              +381 60 123 4567
+              {PHONE}
             </a>
           </div>
           <div className='grid gap-1'>
-            <h3 className='pl-2 font-semibold '>Društvene mreže</h3>
+            <h3 className='pl-2 font-semibold '>Daibau</h3>
             <a
-              href='https://www.facebook.com/yourpage'
+              href='https://www.daibau.rs/izvodjac/dm_elektro_frigo_arandjelovac'
+              target='_blank'
+              rel='noopener noreferrer'
               className={`${buttonVariants({ size: 'lg', variant: 'ghost' })}  w-fit`}
             >
-              <FacebookIcon className='w-[150px] h-[150px]' />
-              Facebook
+              <House />
+              www.daibau.rs/izvodjac/dm_elektro_frigo_arandjelovac
             </a>
           </div>
         </div>

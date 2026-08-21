@@ -1,6 +1,6 @@
 import { buttonVariants } from '@/components/ui/button'
-import { Mail, Smartphone } from 'lucide-react'
-import FacebookIcon from '../icons/FacebookIcon'
+import { House, Mail, Smartphone } from 'lucide-react'
+import { MAIL, PHONE } from '@/app/consts'
 
 const Contact = () => {
   return (
@@ -10,33 +10,35 @@ const Contact = () => {
         <div className='grid gap-2'>
           <h3 className='font-semibold'>Email</h3>
           <a
-            href='mailto:info@example.com'
+            href={`mailto:${MAIL}`}
             className={`${buttonVariants({ size: 'lg', variant: 'ghost' })} pl-0 w-fit`}
           >
             <Mail />
-            info@example.com
+            {MAIL}
           </a>
         </div>
 
         <div className='grid gap-2'>
           <h3 className='font-semibold'>Telefon</h3>
           <a
-            href='tel:+381601234567'
+            href={`tel:${PHONE}`}
             className={`${buttonVariants({ size: 'lg', variant: 'ghost' })} pl-0 w-fit`}
           >
             <Smartphone />
-            +381 60 123 4567
+            {PHONE}
           </a>
         </div>
 
         <div className='grid gap-2'>
-          <h3 className='font-semibold'>Društvene mreže</h3>
+          <h3 className='font-semibold'>Daibau</h3>
           <a
-            href='https://www.facebook.com/yourpage'
+            href='https://www.daibau.rs/izvodjac/dm_elektro_frigo_arandjelovac'
             className={`${buttonVariants({ size: 'lg', variant: 'ghost' })} pl-0 w-fit`}
+            target='_blank'
+            rel='noopener noreferrer'
           >
-            <FacebookIcon className='w-[150px] h-[150px]' />
-            Facebook
+            <House />
+            www.daibau.rs/izvodjac/dm_elektro_frigo_arandjelovac
           </a>
         </div>
       </div>
