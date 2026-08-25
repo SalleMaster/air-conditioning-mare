@@ -1,47 +1,60 @@
 import { buttonVariants } from '@/components/ui/button'
-import { Mail, Smartphone } from 'lucide-react'
-import FacebookIcon from '../icons/FacebookIcon'
+import { House, Mail, Smartphone } from 'lucide-react'
+import { MAIL, PHONE } from '@/app/consts'
 
 const Contact = () => {
   return (
-    <section id='contact' className='grid gap-8 bg-secondary py-20 px-4'>
+    <section id='contact' className='grid gap-8 py-20 px-4'>
       <h2 className='text-4xl text-center font-bold'>Kontakt</h2>
       <div className='container mx-auto grid gap-8'>
         <div className='grid gap-2'>
           <h3 className='font-semibold'>Email</h3>
           <a
-            href='mailto:info@example.com'
+            href={`mailto:${MAIL}`}
             className={`${buttonVariants({ size: 'lg', variant: 'ghost' })} pl-0 w-fit`}
           >
             <Mail />
-            info@example.com
+            {MAIL}
           </a>
         </div>
 
         <div className='grid gap-2'>
           <h3 className='font-semibold'>Telefon</h3>
           <a
-            href='tel:+381601234567'
+            href={`tel:${PHONE}`}
             className={`${buttonVariants({ size: 'lg', variant: 'ghost' })} pl-0 w-fit`}
           >
             <Smartphone />
-            +381 60 123 4567
+            {PHONE}
           </a>
         </div>
 
         <div className='grid gap-2'>
-          <h3 className='font-semibold'>Društvene mreže</h3>
+          <h3 className='font-semibold'>Daibau</h3>
           <a
-            href='https://www.facebook.com/yourpage'
+            href='https://www.daibau.rs/izvodjac/dm_elektro_frigo_arandjelovac'
             className={`${buttonVariants({ size: 'lg', variant: 'ghost' })} pl-0 w-fit`}
+            target='_blank'
+            rel='noopener noreferrer'
           >
-            <FacebookIcon className='w-[150px] h-[150px]' />
-            Facebook
+            <House />
+            www.daibau.rs
           </a>
         </div>
       </div>
 
-      <div>
+      <div className='flex justify-center sm:hidden'>
+        <iframe
+          src='https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d2854.679009658096!2d20.548709!3d44.316549!3m2!1i1024!2i768!4f13.1!2m1!1sPu%C5%A1kinova%2037%20Aran%C4%91elovac%2034300!5e0!3m2!1sen!2srs!4v1787648278701!5m2!1sen!2srs'
+          width='300'
+          height='300'
+          style={{ border: 0 }}
+          allowFullScreen={true}
+          loading='lazy'
+          referrerPolicy='strict-origin-when-cross-origin'
+        ></iframe>
+      </div>
+      <div className='hidden sm:block'>
         <iframe
           src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d713.669367597754!2d20.548434743265325!3d44.31658064033915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47574d455fca9ad9%3A0xe1f6825efeab5580!2sPu%C5%A1kinova%2037%2C%20Aran%C4%91elovac%2034300!5e0!3m2!1sen!2srs!4v1786355575517!5m2!1sen!2srs'
           width='100%'
