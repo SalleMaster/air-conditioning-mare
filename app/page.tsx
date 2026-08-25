@@ -5,6 +5,7 @@ import Hero from '@/components/sections/Hero'
 import Services from '@/components/sections/Services'
 import Contact from '@/components/sections/Contact'
 import Footer from '@/components/sections/Footer'
+import Testimonials from '@/components/sections/Testimonials'
 
 export default function Page() {
   return (
@@ -12,6 +13,7 @@ export default function Page() {
       <Hero />
       <Services />
       <Actions />
+      <Testimonials />
       <About />
       <Gallery />
       <Contact />

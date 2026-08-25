@@ -40,7 +40,7 @@ const Footer = () => {
               className={`${buttonVariants({ size: 'lg', variant: 'ghost' })}  w-fit`}
             >
               <House />
-              www.daibau.rs/izvodjac/dm_elektro_frigo_arandjelovac
+              www.daibau.rs
             </a>
           </div>
         </div>
