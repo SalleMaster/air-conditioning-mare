@@ -14,8 +14,8 @@ export default function Page() {
       <Services />
       <Actions />
       <Testimonials />
-      <About />
       <Gallery />
+      <About />
       <Contact />
       <Footer />
     </>

@@ -17,7 +17,8 @@ import {
   CardDescription,
   CardAction,
 } from '../ui/card'
-import { Star } from 'lucide-react'
+import { House, Star } from 'lucide-react'
+import { buttonVariants } from '../ui/button'
 
 const clientTestimonials = [
   {
@@ -25,7 +26,8 @@ const clientTestimonials = [
     service: 'Inverter klima sa ugradnjom',
     rating: 5,
     review: 'Savestan, odgovoran, uredan. Sve pohvale!',
-    source: 'Daibau.rs',
+    sourceName: 'Daibau.rs',
+    sourceUrl: 'https://www.daibau.rs/izvodjac/dm_elektro_frigo_arandjelovac',
   },
   {
     name: 'Miroljub S.',
@@ -33,44 +35,47 @@ const clientTestimonials = [
     rating: 5,
     review:
       'Саветиовали су, држали се договора и све добро урадили. Професионално. Све препоруке.',
-    source: 'Daibau.rs',
+    sourceName: 'Daibau.rs',
+    sourceUrl: 'https://www.daibau.rs/izvodjac/dm_elektro_frigo_arandjelovac',
   },
   {
     name: 'Milos P.',
     service: 'Ugradnja klima uredjaja',
     rating: 5,
     review: 'Sve brzo i odlicno.',
-    source: 'Daibau.rs',
+    sourceName: 'Daibau.rs',
+    sourceUrl: 'https://www.daibau.rs/izvodjac/dm_elektro_frigo_arandjelovac',
   },
   {
     name: 'Jasmina B.',
     service: 'Dopuna freona i servis',
     rating: 5,
     review: 'Za svaku pohvalu.',
-    source: 'Daibau.rs',
+    sourceName: 'Daibau.rs',
+    sourceUrl: 'https://www.daibau.rs/izvodjac/dm_elektro_frigo_arandjelovac',
   },
   {
     name: 'Snezana E.',
     service: 'Ugradnja klime',
     rating: 5,
     review: 'SVE DOBRO IZVEDENO. NEMAM PRIMEDBE.',
-    source: 'Daibau.rs',
+    sourceName: 'Daibau.rs',
+    sourceUrl: 'https://www.daibau.rs/izvodjac/dm_elektro_frigo_arandjelovac',
   },
   {
     name: 'Danjjela M.',
     service: 'Ugradnja inverter klime',
     rating: 5,
     review: 'Savrseno. Preporuka za ovog majstora.',
-    source: 'Daibau.rs',
+    sourceName: 'Daibau.rs',
+    sourceUrl: 'https://www.daibau.rs/izvodjac/dm_elektro_frigo_arandjelovac',
   },
 ]
 
 const Testimonials = () => {
   return (
     <section id='testimonials' className='grid gap-8 bg-secondary py-20 px-4'>
-      <h2 className='text-4xl text-center font-bold'>
-        Recenzije naših klijenata
-      </h2>
+      <h2 className='text-4xl text-center font-bold'>Recenzije klijenata</h2>
       <div className='container mx-auto flex justify-center'>
         <Carousel
           className='w-full max-w-48 sm:max-w-full mx-10'
@@ -118,7 +123,14 @@ const Testimonials = () => {
                       <p>{testimonial.review}</p>
                     </CardContent>
                     <CardFooter>
-                      <p>{testimonial.source}</p>
+                      <a
+                        href={testimonial.sourceUrl}
+                        className={`${buttonVariants({ size: 'lg', variant: 'ghost' })} w-fit`}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        {testimonial.sourceName}
+                      </a>
                     </CardFooter>
                   </Card>
                 </div>

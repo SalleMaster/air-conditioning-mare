@@ -4,7 +4,7 @@ import { MAIL, PHONE } from '@/app/consts'
 
 const Contact = () => {
   return (
-    <section id='contact' className='grid gap-8 bg-secondary py-20 px-4'>
+    <section id='contact' className='grid gap-8 py-20 px-4'>
       <h2 className='text-4xl text-center font-bold'>Kontakt</h2>
       <div className='container mx-auto grid gap-8'>
         <div className='grid gap-2'>
@@ -33,7 +33,7 @@ const Contact = () => {
           <h3 className='font-semibold'>Daibau</h3>
           <a
             href='https://www.daibau.rs/izvodjac/dm_elektro_frigo_arandjelovac'
-            className={`${buttonVariants({ size: 'lg', variant: 'ghost' })} pl-0 w-fit wrap-break-word`}
+            className={`${buttonVariants({ size: 'lg', variant: 'ghost' })} pl-0 w-fit`}
             target='_blank'
             rel='noopener noreferrer'
           >
